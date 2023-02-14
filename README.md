@@ -1,1 +1,2 @@
-# Drum_Kit
+A drum playing website
+Made using javascript
