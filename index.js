@@ -1,6 +1,3 @@
-// 
-
-
 let key_press;
 
 for (let i = 0; i < document.querySelectorAll("button").length; i++) {
@@ -12,7 +9,7 @@ for (let i = 0; i < document.querySelectorAll("button").length; i++) {
 }
 
 document.addEventListener("keydown", function (event) {
-    key_press = event.key; // extracts the key pressedon keyboard
+    key_press = event.key.toLowerCase(); // extracts the key pressedon keyboard
     click_triggger(key_press);
     animate_button_press(key_press);
 });
@@ -74,5 +71,5 @@ function animate_button_press(key_press) {
     // after the time_period passes, the function() executes 
     setTimeout(function () {
         active_button.classList.remove("pressed");
-    }, 50);
+    }, 30);
 }
